@@ -1,0 +1,9 @@
+<div id="terminal">
+  <app-terminal-prompt (buildMenu)="buildMenu()"></app-terminal-prompt>
+
+  <ul *ngIf="isScriptRun">
+    <li *ngFor="let option of menu">
+      <a routerLink="option.route">{{ option.label }}</a>
+    </li>
+  </ul>
+</div>
