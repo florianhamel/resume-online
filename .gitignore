@@ -5,4 +5,5 @@
 /integration/bazel/bazel-*
 *.log
 /node_modules/
-/.angular/cache 
+/.angular/cache
+/.vscode
