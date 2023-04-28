@@ -1,5 +1,5 @@
 import {Component, EventEmitter, OnInit, Output} from '@angular/core';
-import {interval, Observable, Subscription} from "rxjs";
+import {interval, Subscription} from "rxjs";
 
 @Component({
   selector: 'app-terminal-prompt',
@@ -13,7 +13,7 @@ export class TerminalPromptComponent implements OnInit {
   @Output() buildMenu: EventEmitter<any> = new EventEmitter();
 
   ngOnInit() {
-    this.promptInterval = interval(150).subscribe(() => {
+    this.promptInterval = interval(20).subscribe(() => {
         this.commandLine += this.finalCommandLine.charAt(this.commandLine.length);
         if (this.commandLine.length === this.finalCommandLine.length) {
           this.buildMenu.emit();
