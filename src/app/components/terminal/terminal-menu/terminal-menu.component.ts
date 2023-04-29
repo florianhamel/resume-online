@@ -1,7 +1,7 @@
 import {Component, Input} from '@angular/core';
 
 interface Option {
-  link: string;
+  path: string;
   label: string;
 }
 
@@ -12,8 +12,8 @@ interface Option {
 })
 export class TerminalMenuComponent {
   @Input() menu: Option[] = [
-    {link: "/resume", label: "Resume"},
-    {link: "/about", label: "About"},
-    {link: "/work", label: "Work"},
+    {path: "/resume", label: "Resume"},
+    {path: "/about", label: "About"},
+    {path: "/work", label: "Work"},
   ];
 }

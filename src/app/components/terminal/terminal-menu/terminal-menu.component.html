@@ -1,5 +1,5 @@
-<ul id="menu-list">
+<ul>
   <li *ngFor="let option of menu">
-    <a routerLink="option.route">> {{ option.label }}</a>
+    <a routerLink="{{ option.path }}">> {{ option.label }}</a>
   </li>
 </ul>
