@@ -9,6 +9,7 @@ import {TerminalMenuComponent} from './components/terminal/terminal-menu/termina
 import {PdfViewerModule} from 'ng2-pdf-viewer';
 import {ResumeButtonsComponent} from './components/resume/resume-buttons/resume-buttons.component';
 import {ResumeComponent} from './components/resume/resume.component';
+import { HomeComponent } from './components/home/home.component';
 
 
 @NgModule({
@@ -20,6 +21,7 @@ import {ResumeComponent} from './components/resume/resume.component';
     TerminalMenuComponent,
     ResumeButtonsComponent,
     ResumeComponent,
+    HomeComponent,
   ],
   imports: [
     BrowserModule,

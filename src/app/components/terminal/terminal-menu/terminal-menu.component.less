@@ -1,3 +1,5 @@
+@import 'variables';
+
 :host {
 
   ul {
@@ -11,11 +13,12 @@
   }
 
   a {
-    color: #48fb47;
-    transition: font-size 90ms ease-in-out;
+    color: white;
+    transition: @text-neon-green-transition;
   }
 
   a:hover {
-    font-size: 2.1rem;
+    color: @terminal-green;
+    text-shadow: @terminal-neon;
   }
 }
