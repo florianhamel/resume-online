@@ -1,0 +1,16 @@
+<div id="topic">
+  <h2 [ngClass]="topic.startRight ? 'start-right' : 'start-left'">{{ topic.title }}</h2>
+  <div class="content-container">
+    <div *ngIf="topic.startRight; then assetFirst else textFirst"></div>
+  </div>
+</div>
+
+<ng-template #assetFirst>
+  <img src="{{ topic.assetUrl }}" alt="{{ topic.assetAlt }}"/>
+  <p class="start-right" [ngClass]="topic.startRight ? 'start-right' : 'start-left'">{{ topic.text }}</p>
+</ng-template>
+
+<ng-template #textFirst>
+  <p class="start-left">{{ topic.text }}</p>
+  <img src="{{ topic.assetUrl }}" alt="{{ topic.assetAlt }}"/>
+</ng-template>

@@ -10,6 +10,8 @@ import {PdfViewerModule} from 'ng2-pdf-viewer';
 import {ResumeButtonsComponent} from './components/resume/resume-buttons/resume-buttons.component';
 import {ResumeComponent} from './components/resume/resume.component';
 import { HomeComponent } from './components/home/home.component';
+import { AboutComponent } from './components/about/about.component';
+import { AboutTopicComponent } from './components/about/about-topic/about-topic.component';
 
 
 @NgModule({
@@ -22,6 +24,8 @@ import { HomeComponent } from './components/home/home.component';
     ResumeButtonsComponent,
     ResumeComponent,
     HomeComponent,
+    AboutComponent,
+    AboutTopicComponent,
   ],
   imports: [
     BrowserModule,
