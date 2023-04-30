@@ -1,11 +1,22 @@
+@import 'variables';
+
 :host {
-  .start-left {
-    text-align: left;
-    justify-content: left;
+  @border-text: solid black 1px;
+
+  #topic {
+    margin-bottom: 40px;
   }
 
   .start-right {
     text-align: right;
+  }
+
+  .border-left {
+    border-left: @border-text;
+  }
+
+  .border-right {
+    border-right: @border-text;
   }
 
   .content-container {
@@ -13,10 +24,24 @@
   }
 
   h2 {
-    margin: 2px;
+    margin: 0;
+  }
+
+  img {
+    height: 260px;
+    width: 210px;
+    background-color: white;
+    margin: 20px 15px 0;
+    border: solid black 1px;
+    border-radius: 30px;
   }
 
   p {
-    font-size: 1.1rem;
+    padding: 12px;
+    white-space: pre-line;
+    font-size: 1.3rem;
+    text-align: justify;
+    border-radius: 30px;
+    border-bottom: @border-text;
   }
 }

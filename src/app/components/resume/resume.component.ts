@@ -7,7 +7,7 @@ import {Component} from '@angular/core';
 })
 export class ResumeComponent {
   zoomRatio: number = 0.8;
-  srcPdf: string = "assets/florian_hamel_en.pdf";
+  srcPdf: string = "assets/documents/florian_hamel_en.pdf";
 
   adjustZoom(delta: number): void {
     this.zoomRatio += delta;

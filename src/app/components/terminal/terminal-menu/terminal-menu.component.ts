@@ -13,7 +13,6 @@ interface IOption {
 export class TerminalMenuComponent {
   @Input() menu: IOption[] = [
     {path: "/resume", label: "Resume"},
-    {path: "/about", label: "About"},
-    {path: "/work", label: "Work"},
+    {path: "/about", label: "About"}
   ];
 }
