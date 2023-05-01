@@ -1,0 +1,24 @@
+@import 'variables';
+
+:host {
+  .media {
+    margin-top: 75px;
+    display: flex;
+    justify-content: center;
+  }
+
+  .medium-logo {
+    border: 2px solid black;
+    border-radius: 50px;
+    width: 50px;
+    height: 50px;
+    margin: 20px;
+    background-color: white;
+    transition: border @neon-green-time ease-in-out, box-shadow @neon-green-time ease-in-out;
+  }
+
+  .medium-logo:hover {
+    border: 2px solid @terminal-green;
+    box-shadow: @terminal-neon;
+  }
+}

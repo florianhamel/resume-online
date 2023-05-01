@@ -12,6 +12,7 @@ import {ResumeComponent} from './components/resume/resume.component';
 import {HomeComponent} from './components/home/home.component';
 import {AboutComponent} from './components/about/about.component';
 import {AboutTopicComponent} from './components/about/about-topic/about-topic.component';
+import { TerminalMediaComponent } from './components/terminal/terminal-media/terminal-media.component';
 
 @NgModule({
   declarations: [
@@ -25,6 +26,7 @@ import {AboutTopicComponent} from './components/about/about-topic/about-topic.co
     HomeComponent,
     AboutComponent,
     AboutTopicComponent,
+    TerminalMediaComponent,
   ],
   imports: [
     BrowserModule,

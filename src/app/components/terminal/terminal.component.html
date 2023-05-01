@@ -3,5 +3,8 @@
                        [finalCommandLine]="'./build_menu.sh'"
                        [typeSpeed]="40"
                        (commandRun)="buildMenu()"></app-terminal-prompt>
-  <app-terminal-menu class="menu" [class.active]="isCommandRun"></app-terminal-menu>
+  <div class="options" [class.active]="isCommandRun">
+    <app-terminal-menu></app-terminal-menu>
+    <app-terminal-media></app-terminal-media>
+  </div>
 </div>
