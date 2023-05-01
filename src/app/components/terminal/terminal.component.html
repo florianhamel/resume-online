@@ -1,4 +1,7 @@
 <div class="terminal terminal-ui">
-  <app-terminal-prompt (buildMenu)="buildMenu()"></app-terminal-prompt>
-  <app-terminal-menu *ngIf="isScriptRun"></app-terminal-menu>
+  <app-terminal-prompt class="prompt"
+                       [finalCommandLine]="'./build_menu.sh'"
+                       [typeSpeed]="40"
+                       (commandRun)="buildMenu()"></app-terminal-prompt>
+  <app-terminal-menu class="menu" [class.active]="isCommandRun"></app-terminal-menu>
 </div>

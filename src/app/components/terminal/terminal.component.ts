@@ -6,9 +6,9 @@ import { Component } from '@angular/core';
   styleUrls: ['./terminal.component.less']
 })
 export class TerminalComponent {
-  isScriptRun: boolean = false;
+  isCommandRun: boolean = false;
 
   buildMenu(): void {
-    this.isScriptRun = true;
+    this.isCommandRun = !this.isCommandRun;
   }
 }

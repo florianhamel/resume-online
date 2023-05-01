@@ -8,4 +8,9 @@ import {ITopic} from "../about.component";
 })
 export class AboutTopicComponent {
   @Input() topic!: ITopic;
+  isCommandRun: boolean = false;
+
+  buildContent(): void {
+    this.isCommandRun = !this.isCommandRun;
+  }
 }

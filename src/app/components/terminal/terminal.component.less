@@ -1,23 +1,27 @@
 @import 'variables';
 
 :host {
-  .terminal-ui {
-    border: 10px solid black;
-    border-radius: 30px;
-    padding: 15px;
-    font-weight: bold;
-    background-color: rgba(black, 0.7);
-    box-shadow: 0 0 5px black;
-  }
-
   .terminal {
     width: 660px;
     height: 350px;
     position: absolute;
-    top:0;
+    top: 0;
     bottom: 0;
     left: 0;
     right: 0;
     margin: auto;
+  }
+
+  .menu {
+    opacity: 0;
+    transition: opacity 80ms ease-in-out;
+  }
+
+  .menu.active {
+    opacity: 1;
+  }
+
+  .prompt {
+    font-size: 2rem;
   }
 }

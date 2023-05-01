@@ -1,16 +1,20 @@
-<div id="topic">
-  <h2 [ngClass]="{'start-right': topic.startRight }">{{ topic.title }}</h2>
-  <div class="content-container">
+<div class="topic terminal-ui">
+  <app-terminal-prompt class="prompt"
+                       [finalCommandLine]="topic.title"
+                       [typeSpeed]="40"
+                       (commandRun)="buildContent()">
+  </app-terminal-prompt>
+  <div class="content-container" [class.active]="isCommandRun">
     <div *ngIf="topic.startRight; then assetFirst else textFirst"></div>
   </div>
 </div>
 
 <ng-template #assetFirst>
-  <img src="{{ topic.assetUrl }}" alt="{{ topic.assetAlt }}"/>
-  <p class="border-right">{{ topic.text }}</p>
+    <img src="{{ topic.assetUrl }}" alt="{{ topic.assetAlt }}"/>
+  <p>{{ topic.text }}</p>
 </ng-template>
 
 <ng-template #textFirst>
-  <p class="border-left">{{ topic.text }}</p>
+  <p>{{ topic.text }}</p>
   <img src="{{ topic.assetUrl }}" alt="{{ topic.assetAlt }}"/>
 </ng-template>

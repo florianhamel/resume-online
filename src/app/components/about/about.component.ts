@@ -16,7 +16,7 @@ export interface ITopic {
 export class AboutComponent {
   topics: ITopic[] = [
     {
-      title: 'Who am I?',
+      title: './who_am_I?',
       assetUrl: 'assets/images/florian_hamel.jpeg',
       assetAlt: 'Photo of me!',
       text: 'Good question... as I can\'t answer it, I\'ll ' +
@@ -29,7 +29,7 @@ export class AboutComponent {
       startRight: false
     },
     {
-      title: 'What did I learn at 42Paris?',
+      title: './what_did_I_learn_at_42Paris?',
       assetUrl: 'assets/images/42Paris.png',
       assetAlt: 'Logo 42 Paris',
       text: 'A lot of things... and even more about myself ' +
@@ -43,13 +43,13 @@ export class AboutComponent {
       startRight: true
     },
     {
-      title: 'What am I doing now?',
-      assetUrl: 'assets/images/freelance-idea.jpg',
+      title: './what_am_I_doing_now?',
+      assetUrl: 'assets/images/freelance-image.jpg',
       assetAlt: 'Image Freelance',
       text: 'I\'m a Fullstack Developer Freelance currently engaged in a long term mission for Chanel since ' +
-        'September 2022.\nOn the side I try to improve my technical skills and keep my curiosity open to understanding ' +
-        'technologies and many other things. I am always having fun facing new challenges, while trying to appreciate ' +
-        'what\'s in front of me.\nDeveloping this small resume online was something really fun to me before everything! ' +
+        'September 2022.\nOn the side I\'m eager to improve my technical skills and keep my curiosity open to ' +
+        'technologies and as many things as I can. I am always having fun facing new challenges, while trying to appreciate ' +
+        'what\'s in front of me.\nDeveloping this small resume online was something fun to me before everything. ' +
         'Hope you enjoyed the tour, and feel free to contact me on the media shared in the menu! :D',
       startRight: false
     }
