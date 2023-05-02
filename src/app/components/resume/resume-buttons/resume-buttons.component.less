@@ -9,8 +9,8 @@
     right: 20px;
   }
 
-  .resume-button {
-    border: 1px @resume-dark-blue solid;
+  button {
+    border: 2px solid @resume-dark-blue;
     background-color: white;
     border-radius: 30px;
     width: 40px;
@@ -19,8 +19,9 @@
     transition: border @neon-green-time ease-in-out;
   }
 
-  .resume-button:hover {
-    border: 1px @resume-light-blue solid;
+  button:hover {
+    border: @terminal-border-green;
+    box-shadow: @terminal-neon;
   }
 
   .resume-icon {
@@ -30,7 +31,7 @@
   }
 
   .resume-download {
-    border: 1px @resume-dark-blue solid;
+    border: 2px solid @resume-dark-blue;
     background-color: white;
     border-radius: 30px;
     width: 36px;
@@ -40,6 +41,6 @@
   }
 
   .resume-download:hover {
-    border: 1px @resume-light-blue solid;
+    border: @terminal-border-green;
   }
 }

@@ -37,8 +37,8 @@ export class AboutComponent {
         'about the "what" than it was about the "how" and the "why".\n\nI was in total autonomy ' +
         'during about half of the cursus meaning one year and a half: no teacher and in the middle ' +
         'of the corona virus crisis. It was tough and very interesting at the same time.\n\n' +
-        'For the other half I worked on several projects with two other students for the rest of the cursus. ' +
-        'I discovered the highs and lows of teamworking in programming, and it was for sure the best part ' +
+        'For the other half I worked on several projects with two other students. ' +
+        'I discovered the highs and the lows of teamworking in programming, and it was for sure the best part ' +
         'of my cursus. It made me able to apply for the job I am doing now!',
       startRight: true
     },
@@ -46,11 +46,11 @@ export class AboutComponent {
       title: './what_am_I_doing_now?',
       assetUrl: 'assets/images/freelance-image.jpg',
       assetAlt: 'Image Freelance',
-      text: 'I\'m a Fullstack Developer Freelance currently engaged in a long term mission for Chanel since ' +
-        'September 2022.\n\nOn the side I\'m eager to improve my technical skills and keep my curiosity open to ' +
-        'technologies and as many things as I can. I am always having fun facing new challenges, while trying to appreciate ' +
-        'what\'s in front of me.\n\nDeveloping this small resume online was something fun to me before everything. ' +
-        'Hope you enjoyed the tour, and feel free to contact me on the media shared in the menu! :D',
+      text: 'I\'m a Fullstack Developer Freelance present on the online platform Malt and currently engaged in a long term mission ' +
+        'for Chanel since September 2022.\n\nOn the side I\'m eager to improve my technical skills and keep ' +
+        'my curiosity open to technologies and as many things as I can. I am always having fun facing new challenges,' +
+        ' while trying to appreciate what\'s in front of me.\n\nDeveloping this small resume online was something fun ' +
+        'to me before everything. Hope you enjoyed the tour, and feel free to contact me on the media shared in the menu! :D',
       startRight: false
     }
   ]
