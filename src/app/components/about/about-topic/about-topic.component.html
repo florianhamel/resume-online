@@ -12,13 +12,13 @@
 <ng-template #assetFirst>
   <img src="{{ topic.assetUrl }}" alt="{{ topic.assetAlt }}"/>
   <p>
-    <span class="opening">❯ </span>{{ topic.text }}
+    <span class="opening">❯ </span>{{ this.text }}
   </p>
 </ng-template>
 
 <ng-template #textFirst>
   <p>
-    <span class="opening">❯ </span>{{ topic.text }}
+    <span class="opening">❯ </span>{{ this.text }}
   </p>
   <img src="{{ topic.assetUrl }}" alt="{{ topic.assetAlt }}"/>
 </ng-template>
